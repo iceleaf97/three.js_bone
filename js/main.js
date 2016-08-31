@@ -20,8 +20,8 @@ function init(){
 }
 
 function handleWindowResize() {
-    WIDTH = window.innerWidth;
-    HEIGHT = window.innerHeight;
+    WIDTH = document.getElementById('world').clientWidth;
+    HEIGHT = document.getElementById('world').clientHeight;
 
     renderer.setSize(WIDTH, HEIGHT);
     camera.aspect = WIDTH/HEIGHT;
@@ -39,8 +39,8 @@ function createOrbit() {
 
 function createScene() {
     scene = new THREE.Scene();
-    WIDTH = window.innerWidth;
-    HEIGHT = window.innerHeight;
+    WIDTH = document.getElementById('world').clientWidth;
+    HEIGHT = document.getElementById('world').clientHeight;
     aspectRatio = WIDTH/HEIGHT;
     fieldOfView = 50;
     nearPlane = 1;
