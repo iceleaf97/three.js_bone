@@ -35,8 +35,8 @@ function createScene() {
 }
 
 function createLight(){
-    var spotLight = new THREE.AmbientLight(0xffffff, 1);
-    //spotLight.position.set(-100, 100, 100);
+    var spotLight = new THREE.SpotLight(0xffffff, 1);
+    spotLight.position.set(-100, 100, 100);
     scene.add(spotLight);
 }
 
